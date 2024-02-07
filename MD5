@@ -1,7 +1,8 @@
-31a4971c9b1045576bacb348b3d88264 *DESCRIPTION
+e99e555426cbfed8db3ce7377b2b623c *DESCRIPTION
 051a19935d426f45cd616b37716739cc *LICENSE
 e43a30423d81bea622ad131d37fac9ca *NAMESPACE
-e4849ecb02e7b29c665f9337b09977a9 *R/xegaGaCrossover.R
+5031168ec20e0e26806c4a99c4268f68 *NEWS
+ab3edec9d1bb6d4c852cdda33a551c92 *R/xegaGaCrossover.R
 eb4e2fc81617d7ae5d14b28dba7293b0 *R/xegaGaDecode.R
 737a263ae5849a91d66cf31f89dce3da *R/xegaGaGene-package.R
 6abf59d9ffa42fb0a168f511d67fc5fd *R/xegaGaInitGene.R
@@ -34,8 +35,8 @@ e141e121588a72eaa77bbcb2bdf04705 *man/xegaGaUCrossGene.Rd
 2a13665218b01b142ac35c78fafdab33 *man/xegaGaUPCross2Gene.Rd
 2e5e24589f8943f3c2393d5c02856c6d *man/xegaGaUPCrossGene.Rd
 5655f6ad382f73b56e916e2696c9937d *tests/testthat.R
-733b3572044c96a72f4aa6c0a8999581 *tests/testthat/test-replicate.R
-9be3d5443e6048a23979b8ebc8131c0a *tests/testthat/test-xegaGaCrossover.R
-7ef465eba9611098fb0649fadfb13ad7 *tests/testthat/test-xegaGaDecode.R
-12c3a11a12bb1167c0a8e4fe2e960c89 *tests/testthat/test-xegaGaGene.R
-7ff85260d1dcd4159f8d2c8e50e8bd18 *tests/testthat/test-xegaGaMutate.R
+53ff160567501af6d21ba1f8999ed916 *tests/testthat/test-replicate.R
+4148613a15882f9aa4b2944d7fd72b91 *tests/testthat/test-xegaGaCrossover.R
+394feaaa6452dae5b8e6df6488188a5a *tests/testthat/test-xegaGaDecode.R
+f948066813875bf17af7cd336ff44e52 *tests/testthat/test-xegaGaGene.R
+055fa1ea451e6f3d394f0a8e6ce7d1b4 *tests/testthat/test-xegaGaMutate.R
