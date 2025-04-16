@@ -5,7 +5,7 @@
 \alias{lFxegaGaGene}
 \title{The local function list lFxegaGaGene.}
 \format{
-An object of class \code{list} of length 28.
+An object of class \code{list} of length 29.
 }
 \usage{
 lFxegaGaGene
@@ -30,11 +30,11 @@ We use the local function list for
   \item    
       dynamically binding a local function with a definition from a
       proper function factory. E.g., the selection methods 
-      \code{lf$SelectGene} and \code{SelectMate}.
+      \code{lF$SelectGene()} and \code{lF$SelectMate()}.
       
  \item gene representations which require special functions to handle them:
-       \code{lf$InitGene}, \code{lF$DecodeGene}, \code{lf$EvalGene}
-       \code{lf$ReplicateGene}, ...
+       \code{lF$InitGene()}, \code{lF$DecodeGene()}, \code{lF$EvalGene()},
+       \code{lF$ReplicateGene()}, ...
       
  }
 }

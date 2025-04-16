@@ -1,6 +1,6 @@
 Package: xegaGaGene
 Title: Binary Gene Operations for Genetic Algorithms
-Version: 1.0.0.1
+Version: 1.0.0.2
 Authors@R: 
     person(given = "Andreas",
            family = "Geyer-Schulz",
@@ -21,15 +21,15 @@ Description: Representation-dependent gene level operations of a
         For mutation operators, see 
         Stanhope, S. A. and Daida, J. M. (1996, ISBN:0-18-201-031-7).
 License: MIT + file LICENSE
-URL: <https://github.com/ageyerschulz/xegaGaGene>
+URL: https://github.com/ageyerschulz/xegaGaGene
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: testthat (>= 3.0.0)
 Imports: xegaSelectGene
 NeedsCompilation: no
-Packaged: 2024-02-07 09:12:52 UTC; dj2333
+Packaged: 2025-04-16 09:56:18 UTC; dj2333
 Author: Andreas Geyer-Schulz [aut, cre]
     (<https://orcid.org/0009-0000-5237-3579>)
 Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
 Repository: CRAN
-Date/Publication: 2024-02-07 11:30:02 UTC
+Date/Publication: 2025-04-16 10:50:02 UTC

@@ -17,11 +17,9 @@ xegaGaCrossGene(gg1, gg2, lF)
 A list of one binary gene.
 }
 \description{
-\code{xegaGaCrossGene} randomly determines a cut point.
+\code{xegaGaCrossGene()} randomly determines a cut point.
              It combines the bits before the cut point of the first gene
              with the bits after the cut point from the second gene (kid 1).
-             It combines the bits before the cut point of the second gene
-             with the bits after the cut point from the first gene (kid 2).
 }
 \examples{
 gene1<-xegaGaInitGene(lFxegaGaGene)
@@ -32,8 +30,8 @@ gene3<-xegaGaCrossGene(gene1, gene2, lFxegaGaGene)
 xegaGaDecodeGene(gene3[[1]], lFxegaGaGene)
 }
 \seealso{
-Other Crossover (1): 
+Other Crossover (Returns 1 Kid): 
 \code{\link{xegaGaUCrossGene}()},
 \code{\link{xegaGaUPCrossGene}()}
 }
-\concept{Crossover (1)}
+\concept{Crossover (Returns 1 Kid)}

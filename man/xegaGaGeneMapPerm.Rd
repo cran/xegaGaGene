@@ -15,7 +15,8 @@ xegaGaGeneMapPerm(gene, penv)
 A permutation (the decoded gene (the phenotype))
 }
 \description{
-\code{xegaGaGeneMapPerm} maps the bit strings of a binary string 
+\code{xegaGaGeneMapPerm()} maps 
+             the bit strings of a binary string 
              to a permutation of integers.
              Example: Traveling Salesman Problem (TSP).
 }
@@ -27,8 +28,8 @@ xegaGaGeneMapPerm(gene$gene1, lFxegaGaGene$penv)
 \seealso{
 Other Decoder: 
 \code{\link{xegaGaDecodeGene}()},
+\code{\link{xegaGaGeneMap}()},
 \code{\link{xegaGaGeneMapGray}()},
-\code{\link{xegaGaGeneMapIdentity}()},
-\code{\link{xegaGaGeneMap}()}
+\code{\link{xegaGaGeneMapIdentity}()}
 }
 \concept{Decoder}

@@ -15,7 +15,7 @@ xegaGaGeneMap(gene, penv)
 The decoded gene (the phenotype).
 }
 \description{
-\code{xegaGaGenemap} maps the bit strings of a binary string 
+\code{xegaGaGeneMap()} maps the bit strings of a binary string 
              to parameters in an interval.
              Bit vectors are mapped into equispaced numbers in the interval.
              Examples: Optimization of problems with real-valued 

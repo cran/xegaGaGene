@@ -17,8 +17,8 @@ xegaGaUPCrossGene(gg1, gg2, lF)
 A list of one binary gene.
 }
 \description{
-\code{xegaGaUPCrossGene} swaps alleles of both genes
-             with a probability of \code{lF$UCrossSwap}. 
+\code{xegaGaUPCrossGene()} swaps alleles of both genes
+             with a probability of \code{lF$UCrossSwap()}. 
              It generates a random 
              mask which is used to build the new gene.
 }
@@ -39,8 +39,8 @@ Spears William and De Jong, Kenneth (1991):
   (ISBN:1-55860-208-9)
 }
 \seealso{
-Other Crossover (1): 
+Other Crossover (Returns 1 Kid): 
 \code{\link{xegaGaCrossGene}()},
 \code{\link{xegaGaUCrossGene}()}
 }
-\concept{Crossover (1)}
+\concept{Crossover (Returns 1 Kid)}

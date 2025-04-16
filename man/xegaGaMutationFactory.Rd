@@ -13,7 +13,7 @@ xegaGaMutationFactory(method = "MutateGene")
 A mutation function for genes.
 }
 \description{
-\code{xegaGaMutationFactory} implements the selection
+\code{xegaGaMutationFactory()} implements the selection
              of one of the mutation functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -23,8 +23,8 @@ A mutation function for genes.
              Current support:
 
              \enumerate{
-             \item "MutateGene" returns \code{xegaGaMutateGene}.
-             \item "IVMGene" returns \code{xegaGaIVAdaptiveMutateGene}.
+             \item "MutateGene" returns \code{xegaGaMutateGene()}.
+             \item "IVM" returns \code{xegaGaIVAdaptiveMutateGene()}.
              }
 }
 \examples{

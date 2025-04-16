@@ -12,10 +12,10 @@ xegaGaGeneMapIdentity(gene, penv)
 \item{penv}{A problem environment.}
 }
 \value{
-The decoded gene (the phenotype).
+A binary gene (the phenotype).
 }
 \description{
-\code{xegaGaGenemapIdentity} maps the bit strings 
+\code{xegaGaGeneMapIdentity()} maps the bit strings 
              of a binary vector
              to an identical binary vector.
              Faster for all problems with single-bit coding.
@@ -29,8 +29,8 @@ xegaGaGeneMapIdentity(gene$gene1, lFxegaGaGene$penv)
 \seealso{
 Other Decoder: 
 \code{\link{xegaGaDecodeGene}()},
+\code{\link{xegaGaGeneMap}()},
 \code{\link{xegaGaGeneMapGray}()},
-\code{\link{xegaGaGeneMapPerm}()},
-\code{\link{xegaGaGeneMap}()}
+\code{\link{xegaGaGeneMapPerm}()}
 }
 \concept{Decoder}

@@ -17,7 +17,7 @@ xegaGaUCross2Gene(gg1, gg2, lF)
 A list of 2 binary genes.
 }
 \description{
-\code{xegaGaUCross2Gene} swaps alleles of both genes
+\code{xegaGaUCross2Gene()} swaps alleles of both genes
              with a probability of 0.5. It generates a random 
              mask which is used to build the new genes.
              It returns 2 genes.
@@ -40,8 +40,8 @@ Syswerda, Gilbert (1989):
   (ISBN:1-55860-066-3)
 }
 \seealso{
-Other Crossover (2): 
+Other Crossover (Returns 2 Kids): 
 \code{\link{xegaGaCross2Gene}()},
 \code{\link{xegaGaUPCross2Gene}()}
 }
-\concept{Crossover (2)}
+\concept{Crossover (Returns 2 Kids)}

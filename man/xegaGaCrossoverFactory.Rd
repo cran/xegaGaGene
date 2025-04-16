@@ -13,7 +13,7 @@ xegaGaCrossoverFactory(method = "Cross2Gene")
 A crossover function for genes.
 }
 \description{
-\code{xegaGaCrossoverFactory} implements the selection
+\code{xegaGaCrossoverFactory()} implements the selection
              of one of the crossover functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -25,17 +25,23 @@ A crossover function for genes.
              \enumerate{
              \item Crossover functions with two kids:
              \enumerate{
-             \item "Cross2Gene" returns \code{xegaGaCross2Gene}.
-             \item "UCross2Gene" returns \code{xegaGaUCross2Gene}.
-             \item "PUCross2Gene" returns \code{xegaGaUPCross2Gene}.
+             \item "Cross2Gene" returns \code{xegaGaCross2Gene()}.
+             \item "UCross2Gene" returns \code{xegaGaUCross2Gene()}.
+             \item "UPCross2Gene" returns \code{xegaGaUPCross2Gene()}.
              }
              \item Crossover functions with one kid:
              \enumerate{
-             \item "CrossGene" returns \code{xegaGaCrossGene}.
-             \item "UCrossGene" returns \code{xegaGaUCrossGene}.
-             \item "PUCrossGene" returns \code{xegaGaUPCrossGene}.
+             \item "CrossGene" returns \code{xegaGaCrossGene()}.
+             \item "UCrossGene" returns \code{xegaGaUCrossGene()}.
+             \item "UPCrossGene" returns \code{xegaGaUPCrossGene()}.
              }
              }
+}
+\details{
+Crossover operations which return 2 kids preserve the genetic
+         material in the population. However, because we work with fixed 
+         size populations, genes with 2 offsprings fill two slots in the
+         new population with their genetic material.
 }
 \examples{
 XGene<-xegaGaCrossoverFactory("Cross2Gene")

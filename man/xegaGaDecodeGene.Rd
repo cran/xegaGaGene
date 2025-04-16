@@ -15,7 +15,7 @@ xegaGaDecodeGene(gene, lF)
 The decoded gene (the phenotype).
 }
 \description{
-\code{xegaGaDecodeGene} decodes a binary gene.
+\code{xegaGaDecodeGene()} decodes a binary gene.
 }
 \examples{
 gene<-xegaGaInitGene(lFxegaGaGene)
@@ -24,9 +24,9 @@ xegaGaDecodeGene(gene, lFxegaGaGene)
 }
 \seealso{
 Other Decoder: 
+\code{\link{xegaGaGeneMap}()},
 \code{\link{xegaGaGeneMapGray}()},
 \code{\link{xegaGaGeneMapIdentity}()},
-\code{\link{xegaGaGeneMapPerm}()},
-\code{\link{xegaGaGeneMap}()}
+\code{\link{xegaGaGeneMapPerm}()}
 }
 \concept{Decoder}

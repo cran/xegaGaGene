@@ -13,7 +13,7 @@ xegaGaGeneMapFactory(method = "Bin2Dec")
 A gene map function for genes.
 }
 \description{
-\code{xegaGaGeneMapFactory} implements the selection
+\code{xegaGaGeneMapFactory()} implements the selection
              of one of the GeneMap functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -23,16 +23,16 @@ A gene map function for genes.
              Current support:
 
              \enumerate{
-             \item "Bin2Dec" returns \code{GeneMap}. (Default).
-             \item "Gray2Dec" returns \code{GeneMapGray}.
-             \item "Identity" returns \code{GeneMapIdentity}.
-             \item "Permutation" returns \code{GeneMapPerm}.
+             \item "Bin2Dec" returns \code{xegaGaGeneMap()}. (Default).
+             \item "Gray2Dec" returns \code{xegaGaGeneMapGray()}.
+             \item "Identity" returns \code{xegaGaGeneMapIdentity()}.
+             \item "Permutation" returns \code{xegaGaGeneMapPerm()}.
              }
 }
 \examples{
 XGene<-xegaGaGeneMapFactory("Identity")
-gene1<-xegaGaInitGene(lFxegaGaGene)
-XGene(gene1, lFxegaGaGene$penv)
+gene<-xegaGaInitGene(lFxegaGaGene)
+XGene(gene$gene1, lFxegaGaGene$penv)
 }
 \seealso{
 Other Configuration: 

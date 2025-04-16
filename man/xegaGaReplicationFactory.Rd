@@ -13,14 +13,14 @@ xegaGaReplicationFactory(method = "Kid1")
 A replication function for genes.
 }
 \description{
-\code{ReplicationFactory} implements the selection
+\code{xegaGaReplicationFactory()} implements the selection
              of a replication method. 
 
              Current support:
 
              \enumerate{
-             \item "Kid1" returns \code{ReplicateGene}.
-             \item "Kid2" returns \code{Replicate2Gene}.
+             \item "Kid1" returns \code{xegaGaReplicateGene()}.
+             \item "Kid2" returns \code{xegaGaReplicate2Gene()}.
              }
 }
 \examples{

@@ -17,29 +17,25 @@ xegaGaReplicateGene(pop, fit, lF)
 A list of one gene.
 }
 \description{
-\code{xegaGaReplicateGene} replicates a gene
+\code{xegaGaReplicateGene()} replicates a gene
              by applying a gene reproduction pipeline 
              which uses crossover and
-             mutation. 
-             The control flow may have the following steps:
+             mutation and finishes with an acceptance rule.
+             The control flow starts
+             by selecting a gene from the population
+             followed by the case distinction:
              \itemize{
-             \item A gene is selected from the population.
+              \item
+             Check if the mutation operation should be applied.
+             (\code{mut} is \code{TRUE} with a probability of \code{lF$MutationRate()}).
+             \item
              Check if the crossover operation should be applied.
-             (The check is \code{TRUE} with a probability of \code{crossrate}).
-             If the check is \code{TRUE}:
-             \itemize{
-               \item Select a mating gene from the population.
-               \item Perform the crossover operation.
-               \item Apply mutation with a probability of \code{mutrate}.
-               \item Return a list one gene.
-                           }
-               \item Apply mutation with a probability of \code{mutrate}.
-               \item Accept gene. For genetic algorithms: Identity.
-               \item Return a list with a single gene.
+             (\code{cross} is \code{TRUE} with a probability of \code{lF$CrossRate()}).
              }
+             The state distinction determines which genetic operations are performed.
 }
 \details{
-\code{xegaGaReplicateGene} implements the control flow 
+\code{xegaGaReplicateGene()} implements the control flow 
          by a dynamic definition of the operator pipeline depending
          on the random choices for mutation and crossover:
 \enumerate{
@@ -58,6 +54,10 @@ A list of one gene.
           Mutation. 
   }
   \item  Perform the operator pipeline and accept the result.
+         The acceptance step allows the combination of a genetic algorithm
+         with other heuristic algorithms like simulated 
+         annealing by executing an acceptance rule. 
+         For the genetic algorithm, the identity function is used.            
   }
 }
 \examples{

@@ -2,6 +2,7 @@
 % Please edit documentation in R/xegaGaGene-package.R
 \docType{package}
 \name{xegaGaGene}
+\alias{xegaGaGene-package}
 \alias{xegaGaGene}
 \title{Package xegaGaGene.}
 \description{
@@ -95,14 +96,15 @@ expected in the local function list lF.
 
 
 The local constants of a mutation function determine 
-the behavior of the function. 
+the behavior of the function. The default values in the 
+table below are set in \code{lFxegaGaGene}.
 
 \tabular{rcl}{ 
 \strong{Constant} \tab \strong{Default} \tab \strong{Used in} \cr 
-lF$BitMutationRate1 \tab 0.005          \tab MutateGene \cr 
-                    \tab                \tab IVAdaptiveMutateGene \cr 
-lF$BitMutationRate2 \tab 0.01           \tab IVAdaptiveMutateGene \cr 
-lF$CutoffFit        \tab 0.5            \tab IVADaptiveMutateGene \cr
+lF$BitMutationRate1() \tab 0.01       \tab xegaGaMutateGene() \cr 
+                    \tab              \tab xegaGaIVAdaptiveMutateGene() \cr 
+lF$BitMutationRate2() \tab 0.20       \tab xegaGaIVAdaptiveMutateGene() \cr 
+lF$CutoffFit()        \tab 0.5        \tab xegaGaIVADaptiveMutateGene() \cr
 }
 }
 
@@ -128,8 +130,8 @@ the behavior of the function.
 
 \tabular{rcl}{ 
 \strong{Constant} \tab \strong{Default} \tab \strong{Used in} \cr 
-lF$UCrossSwap     \tab 0.2              \tab UPCross2Gene \cr 
-                    \tab                \tab UPCrossGene \cr 
+lF$UCrossSwap()     \tab 0.2              \tab UPCross2Gene() \cr 
+                    \tab                \tab UPCrossGene() \cr 
 }
 }
 
@@ -151,21 +153,21 @@ gene replication functions are:
 
 \tabular{rcl}{ 
 \strong{Function} \tab \strong{Default} \tab Configured By \cr 
-lF$SelectGene     \tab SelectSUS        \tab SelectGeneFactory \cr 
-lF$SelectMate     \tab SelectSUS        \tab SelectGeneFactory \cr 
-lF$CrossGene      \tab CrossGene        \tab xegaGaCrossoverFactory \cr
-lF$MutateGene     \tab MutateGene       \tab xegaGaMutationFactory \cr
-lF$Accept         \tab AcceptNewGene    \tab AcceptFactory \cr
+lF$SelectGene()   \tab SelectSUS()      \tab SelectGeneFactory() \cr 
+lF$SelectMate()   \tab SelectSUS()      \tab SelectGeneFactory() \cr 
+lF$CrossGene()    \tab CrossGene()      \tab xegaGaCrossoverFactory() \cr
+lF$MutateGene()   \tab MutateGene()     \tab xegaGaMutationFactory() \cr
+lF$Accept()       \tab AcceptNewGene()  \tab AcceptFactory() \cr
 }
 
 \strong{Configuration for Replicate2Gene (2 Kids).}
 
 \tabular{rcl}{ 
 \strong{Function} \tab \strong{Default} \tab Configured By \cr 
-lF$SelectGene     \tab SelectSUS        \tab SelectGeneFactory \cr 
-lF$SelectMate     \tab SelectSUS        \tab SelectGeneFactory \cr 
-lF$CrossGene      \tab CrossGene        \tab xegaGaCrossoverFactory \cr
-lF$MutateGene     \tab MutateGene       \tab xegaGaMutationFactory \cr
+lF$SelectGene()   \tab SelectSUS()        \tab SelectGeneFactory() \cr 
+lF$SelectMate()   \tab SelectSUS()        \tab SelectGeneFactory() \cr 
+lF$CrossGene()    \tab CrossGene()        \tab xegaGaCrossoverFactory() \cr
+lF$MutateGene()   \tab MutateGene()       \tab xegaGaMutationFactory() \cr
 }
 
 \strong{Global Constants.}
@@ -177,22 +179,22 @@ adaptive.
 
 \tabular{rcl}{ 
 \strong{Constant} \tab \strong{Default} \tab \strong{Used in} \cr 
-lF$MutationRate   \tab 1.0 (static)     \tab xegaGaReplicateGene \cr 
-                  \tab                  \tab xegaGaReplicate2Gene \cr 
-lF$CrossRate      \tab 0.2 (static)     \tab xegaGaReplicateGene \cr 
-                  \tab                  \tab xegaGaReplicate2Gene \cr 
+lF$MutationRate() \tab 1.0 (static)     \tab xegaGaReplicateGene() \cr 
+                  \tab                  \tab xegaGaReplicate2Gene() \cr 
+lF$CrossRate()    \tab 0.2 (static)     \tab xegaGaReplicateGene() \cr 
+                  \tab                  \tab xegaGaReplicate2Gene() \cr 
 }
 
 \strong{Local Constants.}
 
 \tabular{rcl}{ 
 \strong{Constant} \tab \strong{Default} \tab \strong{Used in} \cr 
-lF$BitMutationRate1 \tab 0.005          \tab MutateGene \cr 
-                    \tab                \tab IVAdaptiveMutateGene \cr 
-lF$BitMutationRate2 \tab 0.01           \tab IVAdaptiveMutateGene \cr 
-lF$CutoffFit        \tab 0.5            \tab IVADaptiveMutateGene \cr
-lF$UCrossSwap     \tab 0.2              \tab UPCross2Gene \cr 
-                    \tab                \tab UPCrossGene \cr 
+lF$BitMutationRate1() \tab 0.01    \tab xegaGaMutateGene() \cr 
+                      \tab         \tab xegaGaIVAdaptiveMutateGene() \cr 
+lF$BitMutationRate2() \tab 0.20    \tab xegaGaIVAdaptiveMutateGene() \cr 
+lF$CutoffFit()        \tab 0.5     \tab xegaGaIVADaptiveMutateGene() \cr
+lF$UCrossSwap()       \tab 0.2     \tab xegaGaUPCross2Gene() \cr 
+                      \tab         \tab xegaGaUPCrossGene() \cr 
 }
 
 In the xega-architecture, these rates can be configured to be 
@@ -269,6 +271,13 @@ Goldberg, David E. (1989)
 Genetic Algorithms in Search, Optimization and Machine Learning.
 Addison-Wesley, Reading. 
 (ISBN:0-201-15767-5)
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ageyerschulz/xegaGaGene}
+}
+
 }
 \author{
 Andreas Geyer-Schulz

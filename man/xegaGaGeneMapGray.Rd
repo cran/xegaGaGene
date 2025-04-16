@@ -15,7 +15,7 @@ xegaGaGeneMapGray(gene, penv)
 The decoded gene (the phenotype).
 }
 \description{
-\code{xegaGaGenemapGray} maps the bit strings of 
+\code{xegaGaGeneMapGray()} maps the bit strings of 
              a binary string 
              interpreted as Gray codes to parameters in an interval.
              Bit vectors are mapped into equispaced numbers in the interval.
@@ -30,8 +30,8 @@ xegaGaGeneMapGray(gene$gene1, lFxegaGaGene$penv)
 \seealso{
 Other Decoder: 
 \code{\link{xegaGaDecodeGene}()},
+\code{\link{xegaGaGeneMap}()},
 \code{\link{xegaGaGeneMapIdentity}()},
-\code{\link{xegaGaGeneMapPerm}()},
-\code{\link{xegaGaGeneMap}()}
+\code{\link{xegaGaGeneMapPerm}()}
 }
 \concept{Decoder}

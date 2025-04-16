@@ -15,11 +15,11 @@ xegaGaIVAdaptiveMutateGene(gene, lF)
 A binary gene
 }
 \description{
-\code{xegaGaIVAdaptiveMutateGene} mutates a binary gene.
-             Two mutation rates (\code{lF$MutationRate()} 
-             and \code{lF$MutationRate2()} which is higher than the first)
+\code{xegaGaIVAdaptiveMutateGene()} mutates a binary gene.
+             Two mutation rates (\code{lF$BitMutationRate1()} 
+             and \code{lF$BitMutationRate2()} which is higher than the first)
              are used depending on the relative fitness of the gene.
-             \code{lF$CutoffFit} and \code{lF$CBestFitness} are used
+             \code{lF$CutoffFit()} and \code{lF$CBestFitness()} are used
              to determine the relative fitness of the gene.
              The rationale is that mutating genes having a low fitness
              with a higher probability rate improves the performance
@@ -36,8 +36,8 @@ This principle is a candidate for a more abstract implementation,
 }
 \examples{
 parm<-function(x) {function() {return(x)}}
-  lFxegaGaGene$BitMutationRate1<-parm(1.0)
-  lFxegaGaGene$BitMutationRate2<-parm(0.5)
+lFxegaGaGene$BitMutationRate1<-parm(1.0)
+lFxegaGaGene$BitMutationRate2<-parm(0.5)
 gene1<-xegaGaInitGene(lFxegaGaGene)
 xegaGaDecodeGene(gene1, lFxegaGaGene)
 gene<-xegaGaIVAdaptiveMutateGene(gene1, lFxegaGaGene)

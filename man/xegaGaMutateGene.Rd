@@ -9,14 +9,15 @@ xegaGaMutateGene(gene, lF)
 \arguments{
 \item{gene}{A binary gene.}
 
-\item{lF}{The local configuration of the genetic algorithm}
+\item{lF}{The local configuration of the genetic algorithm.}
 }
 \value{
 A binary gene.
 }
 \description{
-\code{xegaGaMutateGene} mutates a binary gene.
-              The per-bit mutation rate is given by MutationRate().
+\code{xegaGaMutateGene()} mutates a binary gene.
+              The per-bit mutation rate is given by 
+              \code{lF$BitMutationRate1()}.
 }
 \examples{
 parm<-function(x) {function() {return(x)}}

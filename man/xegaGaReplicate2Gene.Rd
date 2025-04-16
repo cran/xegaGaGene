@@ -17,24 +17,35 @@ xegaGaReplicate2Gene(pop, fit, lF)
 A list of either 1 or 2 binary genes.
 }
 \description{
-\code{xegaGaReplicate2Gene} replicates a gene
-             by applying a gene reproduction pipeline 
-             which uses crossover and
-             mutation. The control flow is as follows:
-             \itemize{
-             \item A gene is selected from the population.
-             Check if the crossover operation should be applied.
-             (The check is \code{TRUE} with a probability of \code{crossrate}).
-             If the check is \code{TRUE}:
-             \itemize{
-               \item Select a mating gene from the population.
-               \item Perform the crossover operation.
-               \item Apply mutation with a probability of \code{mutrate}.
-               \item Return a list with both genes.
-                           }
-               \item Apply mutation with a probability of \code{mutrate}.
-               \item Return a list with a single gene.
-             }
+\code{xegaGaReplicate2Gene()} replicates a gene
+             by 2 random experiments which determine if a mutation 
+             operator (boolean variable \code{mut})  and/or 
+             a crossover operator (boolean variable \code{cross} 
+             should be applied. For each of the 4 cases, the 
+             appropriate code is executed.
+}
+\details{
+\code{xegaGaReplicate2Gene()} implements the control flow 
+         by case distinction which  depends
+         on the random choices for mutation and crossover:
+\enumerate{
+  \item A gene \code{g} is selected and the boolean variables \code{mut}
+        and \code{cross} are set to \code{runif(1)<rate}. 
+        \code{rate} is given by 
+        \code{lF$MutationRate()} or \code{lF$CrossRate()}. 
+  \item The truth values of \code{cross} and \code{mut} determine 
+        the code that is executed:
+  \enumerate{      
+  \item \code{(cross==TRUE) & (mut==TRUE)}: 
+          Mate selection,  crossover, mutation. 
+  \item \code{(cross==TRUE) & (mut==FALSE)}: 
+          Mate selection, crossover. 
+  \item \code{(cross==FALSE) & (mut==TRUE)}: 
+          Mutation. 
+  \item \code{(cross==FALSE) & (mut==FALSE)} is implicit: 
+         Returns a gene list. 
+  }
+  }
 }
 \examples{
 lFxegaGaGene$CrossGene<-xegaGaCross2Gene
