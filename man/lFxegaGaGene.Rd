@@ -5,7 +5,7 @@
 \alias{lFxegaGaGene}
 \title{The local function list lFxegaGaGene.}
 \format{
-An object of class \code{list} of length 29.
+An object of class \code{list} of length 32.
 }
 \usage{
 lFxegaGaGene

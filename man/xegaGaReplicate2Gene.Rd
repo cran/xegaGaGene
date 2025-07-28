@@ -2,7 +2,7 @@
 % Please edit documentation in R/xegaGaReplicate.R
 \name{xegaGaReplicate2Gene}
 \alias{xegaGaReplicate2Gene}
-\title{Replicates a gene.}
+\title{Replicates a gene with a crossover operator with 2 kids.}
 \usage{
 xegaGaReplicate2Gene(pop, fit, lF)
 }
@@ -22,7 +22,7 @@ A list of either 1 or 2 binary genes.
              operator (boolean variable \code{mut})  and/or 
              a crossover operator (boolean variable \code{cross} 
              should be applied. For each of the 4 cases, the 
-             appropriate code is executed.
+             appropriate code is executed and the genes are generated.
 }
 \details{
 \code{xegaGaReplicate2Gene()} implements the control flow 
@@ -59,6 +59,8 @@ newgenes<-xegaGaReplicate2Gene(pop10, fit10, lFxegaGaGene)
 }
 \seealso{
 Other Replication: 
-\code{\link{xegaGaReplicateGene}()}
+\code{\link{xegaGaReplicate2GenePipeline}()},
+\code{\link{xegaGaReplicateGene}()},
+\code{\link{xegaGaReplicateGenePipeline}()}
 }
 \concept{Replication}

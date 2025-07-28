@@ -20,7 +20,11 @@ A replication function for genes.
 
              \enumerate{
              \item "Kid1" returns \code{xegaGaReplicateGene()}.
+             \item "Kid1Pipeline" returns 
+                    \code{xegaGaReplicateGenePipeline()}.
              \item "Kid2" returns \code{xegaGaReplicate2Gene()}.
+             \item "Kid2Pipeline" returns 
+                    \code{xegaGaReplicate2GenePipeline()}.
              }
 }
 \examples{
