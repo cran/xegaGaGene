@@ -1,6 +1,6 @@
 Package: xegaGaGene
 Title: Binary Gene Operations for Genetic Algorithms
-Version: 1.0.0.4
+Version: 1.0.0.5
 Authors@R: 
     person(given = "Andreas",
            family = "Geyer-Schulz",
@@ -25,11 +25,11 @@ URL: https://github.com/ageyerschulz/xegaGaGene
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 Suggests: testthat (>= 3.0.0)
-Imports: xegaSelectGene
+Imports: rlang, xegaSelectGene
 NeedsCompilation: no
-Packaged: 2025-07-28 16:07:43 UTC; dj2333
+Packaged: 2025-08-22 08:08:15 UTC; dj2333
 Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
     <https://orcid.org/0009-0000-5237-3579>)
 Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
 Repository: CRAN
-Date/Publication: 2025-07-28 16:50:02 UTC
+Date/Publication: 2025-08-22 10:00:02 UTC
