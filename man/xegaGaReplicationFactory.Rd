@@ -22,9 +22,13 @@ A replication function for genes.
              \item "Kid1" returns \code{xegaGaReplicateGene()}.
              \item "Kid1Pipeline" returns 
                     \code{xegaGaReplicateGenePipeline()}.
+             \item "Kid1PipelineG" returns 
+                    \code{xegaGaReplicateGenePipelineG()}.
              \item "Kid2" returns \code{xegaGaReplicate2Gene()}.
              \item "Kid2Pipeline" returns 
                     \code{xegaGaReplicate2GenePipeline()}.
+             \item "Kid2PipelineG" returns 
+                    \code{xegaGaReplicate2GenePipelineG()}.
              }
 }
 \examples{

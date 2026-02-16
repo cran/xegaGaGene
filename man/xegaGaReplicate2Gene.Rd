@@ -60,7 +60,9 @@ newgenes<-xegaGaReplicate2Gene(pop10, fit10, lFxegaGaGene)
 \seealso{
 Other Replication: 
 \code{\link{xegaGaReplicate2GenePipeline}()},
+\code{\link{xegaGaReplicate2GenePipelineG}()},
 \code{\link{xegaGaReplicateGene}()},
-\code{\link{xegaGaReplicateGenePipeline}()}
+\code{\link{xegaGaReplicateGenePipeline}()},
+\code{\link{xegaGaReplicateGenePipelineG}()}
 }
 \concept{Replication}
