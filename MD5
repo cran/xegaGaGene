@@ -1,7 +1,7 @@
-6b9dbbc1a3e8ec44ba0b73a5138c9ee2 *DESCRIPTION
+1b1c6d716874c737ff245f35c385d3a2 *DESCRIPTION
 051a19935d426f45cd616b37716739cc *LICENSE
 557c2b2358567784ef92963ddf4a0a68 *NAMESPACE
-b4a27ad9234d07b95465413f26e2521c *NEWS
+e8be649704e5bdae1694bbd4fcbc1d4a *NEWS
 fe316de4234ec8f6de2d6edd3784ab77 *R/xegaGaCrossover.R
 b1c2b1137ce6fae8cfd08d51bc22ee64 *R/xegaGaDecode.R
 935f4ebf660bbb9d9811e9eadf37d8e3 *R/xegaGaGene-package.R
@@ -10,7 +10,7 @@ b1c2b1137ce6fae8cfd08d51bc22ee64 *R/xegaGaDecode.R
 1ebe7784bfd0d6a25824428c77587673 *R/xegaGaReplicate.R
 3cbbd2871e9e232471f74a26a6a0bc93 *R/xegaGalF.R
 8b082c54006947695b913919ab3cbffe *R/xegaOperatorPipelines.R
-72fad545136ad3dce37f771b6f3097af *R/xegaOperatorPipelinesInGene.R
+b58b0e601d8a284f6aa5fc9d6180a8b0 *R/xegaOperatorPipelinesInGene.R
 3643ce42e45afb5b8668e9f8d0c19cd3 *README
 079d790d99d2644e10581a06527ee867 *man/Gray2Bin.Rd
 e55d4126ebf834e6f52b890a6016d0c4 *man/lFxegaGaGene.Rd
